@@ -1,0 +1,61 @@
+<style>
+  header {
+    padding: 16px 0;
+    background-color: #000000df;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+     div {
+      justify-content: space-between;
+
+       img {
+        width: 240px;
+      }
+
+       ul {
+         a {
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all 0.2s;
+          padding: 16px 24px;
+          color: var(--white);
+
+          &:hover {
+            color: var(--primary-color);
+          }
+        }
+
+        .nav-menu-button {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+</style>
+
+<header>
+  <div class="container flex">
+    <a href="index.html"
+      ><img
+        src="assets/images/id/logo-bar-baridade-horizontal-original.svg"
+        alt="Logo Bar-Baridade"
+    /></a>
+    <nav>
+      <ul class="flex">
+        <li><a href="../../sobre.html">Sobre o Bar</a></li>
+        <li><a href="../../menu.html">Nosso Cardápio</a></li>
+        <li><a href="../../calendario.html">Calendário de Eventos</a></li>
+        <li>
+          <a href="../../reserva.html" class="btn-default nav-menu-button"
+            >Faça uma reserva</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar-Baridade | O Único Lugar Onde o Charme é Destilado</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/id/favicon-bar-baridade-96x96.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="header-root"></div>
+    <section id="hero-section">
+      <div class="swiper swiper-hero-section">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-hero-1"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-hero-2"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-hero-3"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-hero-4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-text flex">
+        <h1>
+          O <span>ÚNICO</span> LUGAR <br />
+          ONDE O CHARME É <span>DESTILADO</span>
+        </h1>
+        <a href="reserva.html" class="btn-default">Reserve agora</a>
+        <p>Av. das Boas Noites, 123 – Bairro Alto da Lua, São Paulo – SP</p>
+      </div>
+    </section>
+    <div id="sobre-root"></div>
+    <div id="menu-root"></div>
+    <div id="footer-root"></div>
+
+    <script src="components/header/header.js"></script>
+    <script src="components/sobre/sobre.js"></script>
+    <script src="components/menu/menu.js"></script>
+    <script src="components/footer/footer.js"></script>
+    <script src="assets/scripts/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper-hero-section", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+
+      setTimeout(() => {
+        swiper.update();
+        swiper.autoplay.start();
+      }, 100);
+    </script>
+  </body>
+</html>

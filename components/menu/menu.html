@@ -1,0 +1,123 @@
+<style>
+  #menu {
+    background-color: var(--primary-color);
+    padding: 96px 0;
+    text-align: center;
+
+    .menu-section {
+      flex-direction: column;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        color: var(--secondary-color);
+      }
+      p {
+        color: var(--secondary-color);
+      }
+
+      .swiper-menu-section {
+        margin-top: 80px;
+        width: 1100px;
+
+        .swiper-wrapper {
+          align-items: stretch;
+        }
+
+        .swiper-slide {
+          div {
+            background-color: var(--secondary-color);
+            padding: 12px 12px 24px 12px;
+            border-radius: 12px;
+            width: fit-content;
+
+            img {
+              border-radius: 12px;
+            }
+
+            h3 {
+              font-size: 20px;
+              font-weight: 600;
+              color: var(--white);
+              margin-top: 20px;
+            }
+
+            p {
+              color: var(--white);
+              margin-top: 16px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      a {
+        display: block;
+        margin-top: 64px;
+      }
+    }
+  }
+</style>
+
+<section id="menu">
+  <div class="container flex menu-section">
+    <h2>Destaques do Cardápio</h2>
+    <p>Bar-Baridade - Elegância o suficiente pra disfarçar o terceiro drink.</p>
+    <div class="swiper swiper-menu-section">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/images/burger-da-casa.jpg" alt="" />
+            <h3>Burger Da Casa</h3>
+            <p>blend artesanal, queijo brie e geleia de pimenta</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/images/iscas-de-tilapia.jpg" alt="" />
+            <h3>Iscas De Tilápia</h3>
+            <p>com molho tártaro artesanal</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/images/file-ao-molho.jpg" alt="" />
+            <h3>Filé Ao Molho</h3>
+            <p>corte alto com redução de vinho tinto</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/images/risoto-de-limao.jpg" alt="" />
+            <h3>Risoto Ao Limão Siciliano</h3>
+            <p>leve, cremoso e marcante</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/images/bolinho-de-costela.jpg" alt="" />
+            <h3>Bolinho De Costela</h3>
+            <p>crocante por fora, suculento por dentro</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/images/mini-pasteis.jpg" alt="" />
+            <h3>Mini Pastéis Sortidos</h3>
+            <p>carne, queijo e palmito</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/images/tabua-de-frios.jpg" alt="" />
+            <h3>Tábua Bar-Baridade</h3>
+            <p>mix de queijos, frios e frutas secas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="menu.html" class="btn-secondary">Ver Menu Completo</a>
+  </div>
+</section>
