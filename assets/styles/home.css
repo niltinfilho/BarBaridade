@@ -111,3 +111,61 @@
     }
   }
 }
+
+#calendario-section {
+  width: 100%;
+
+  .img-calendario {
+    width: 50%;
+    height: 90vh;
+    background: url("../images/banda-tocando-no-bar.jpg") center center
+      no-repeat;
+    background-size: cover;
+  }
+
+  .text-calendario {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 48px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 70px;
+    }
+
+    .bandas-calendario {
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: flex-start;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .calendario-banda-title {
+          font-weight: 600;
+          font-size: 20px;
+
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
