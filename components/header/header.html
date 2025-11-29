@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 4;
 
     div {
       justify-content: space-between;
@@ -44,7 +44,7 @@
           height: 2px;
           background-color: var(--white);
           margin: 4px 0;
-          border-radius: 50%;
+          border-radius: 100%;
         }
       }
     }
@@ -69,7 +69,6 @@
           width: 100%;
           padding: 40px;
           background-color: var(--secondary-color);
-          z-index: 999 !important;
 
           ul {
             flex-direction: column !important;
@@ -81,6 +80,7 @@
           }
 
           .nav-menu-button {
+            display: block;
             margin-left: 0;
           }
         }
@@ -101,26 +101,12 @@
       div {
         flex-direction: row !important;
 
-        img {
-          width: 120px;
-        }
-
         nav {
-          display: none;
-          position: absolute;
-          left: 0;
-          top: 60px;
-          width: 100%;
           padding: 24px 0 40px;
           background-color: var(--secondary-color);
 
           ul {
-            flex-direction: column !important;
             gap: 16px;
-
-            a {
-              font-size: 14px;
-            }
           }
         }
 

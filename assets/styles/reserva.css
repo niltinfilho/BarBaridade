@@ -102,6 +102,16 @@
   }
 }
 
+.iframe-maps {
+  padding: 96px 0;
+  max-width: 960px;
+  margin: 0 auto;
+
+  iframe {
+    border-radius: 12px;
+  }
+}
+
 @media (max-width: 1280px) {
   #reserva-section {
     padding: 64px 16px;
@@ -126,6 +136,10 @@
         }
       }
     }
+  }
+
+  .iframe-maps {
+    padding: 64px 16px;
   }
 }
 
