@@ -57,7 +57,7 @@
           }
 
           input:focus {
-            border:  2px solid var(--medium-grey);
+            outline: none;
           }
 
           span {
@@ -85,6 +85,16 @@
           button:hover {
             background-color: var(--primary-color);
             color: var(--secondary-color);
+          }
+
+          button.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+          }
+
+          button.disabled:hover {
+            background-color: var(--red);
+            color: var(--white);
           }
         }
       }
