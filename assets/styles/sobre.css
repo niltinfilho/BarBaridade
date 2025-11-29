@@ -1,0 +1,14 @@
+#about-section {
+  background-color: var(--white);
+  padding: 96px 0;
+
+  .about-content-wrapper {
+    flex-direction: column;
+    gap: 96px
+  }
+
+  .about-content {
+    gap: 80px;
+    text-align: center;
+  }
+}

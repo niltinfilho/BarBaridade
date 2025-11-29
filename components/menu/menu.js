@@ -13,7 +13,6 @@ async function renderMenu() {
 
     centeredSlides: true,
     spaceBetween: 24,
-    slideNext: 2,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
@@ -25,7 +24,6 @@ async function renderMenu() {
   setTimeout(() => {
     swiper.update();
     swiper.autoplay.start();
-    swiper.slideNext(2);
   }, 100);
 }
 

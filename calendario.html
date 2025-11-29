@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bar-Baridade | Calendário</title>
     <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/calendario.css" />
     <link
       rel="shortcut icon"
       href="assets/images/id/favicon-bar-baridade-96x96.png"
@@ -13,12 +14,99 @@
   </head>
   <body>
     <div id="header-root"></div>
-    <div id="menu -root"></div>
+    <div id="hero-subpage-root"></div>
+
+    <section>
+      <div class="show-section flex">
+        <img src="assets/images/Jazz.png" alt="Jazz" />
+
+        <div class="show-text flex">
+          <h2>6 de Dezembro • "Os Bons de Copo"</h2>
+          <p>
+            Jazz, bossa e improviso pra quem entende que ritmo também se bebe.
+          </p>
+          <a href="reserva.html" class="btn-default">Fazer Reserva</a>
+        </div>
+      </div>
+
+      <div class="show-section flex">
+        <img src="assets/images/vintage-82.png" alt="Vintage 82" />
+
+        <div class="show-text flex">
+          <h2>7 de Dezembro • "Vintage 82"</h2>
+          <p>
+            Rock clássico com alma jovem e solos que combinam com whisky on the
+            rocks.
+          </p>
+          <a href="reserva.html" class="btn-default">Fazer Reserva</a>
+        </div>
+      </div>
+
+      <div class="show-section flex">
+        <img
+          src="assets/images/marina-e-os-destemperados.jpg"
+          alt="Marina & Os Destemperados"
+        />
+
+        <div class="show-text flex">
+          <h2>8 de Dezembro • "Marina & Os Destemperados"</h2>
+          <p>
+            MPB moderna e risadas entre um gole e outro.
+          </p>
+          <a href="reserva.html" class="btn-default">Fazer Reserva</a>
+        </div>
+      </div>
+      <div class="show-section flex">
+        <img src="assets/images/solar-groove.jpg" alt="Banda Solar Groove" />
+
+        <div class="show-text flex">
+          <h2>13 de Dezembro • "Banda Solar Groove"</h2>
+          <p>
+            Uma mistura de soul, funk e jazz que transforma qualquer noite em
+            uma celebração.
+          </p>
+          <a href="reserva.html" class="btn-default">Fazer Reserva</a>
+        </div>
+      </div>
+
+      <div class="show-section flex">
+        <img
+          src="assets/images/rock-da-madrugada.jpg"
+          alt="Rock da Madrugada"
+        />
+
+        <div class="show-text flex">
+          <h2>14 de Dezembro • "Rock da Madrugada"</h2>
+          <p>
+            Clássicos do rock com uma pegada moderna e cheia de energia.
+          </p>
+          <a href="reserva.html" class="btn-default">Fazer Reserva</a>
+        </div>
+      </div>
+
+      <div class="show-section flex">
+        <img src="assets/images/samba-simbora.png" alt="Samba Simbora" />
+
+        <div class="show-text flex">
+          <h2>15 de Dezembro • "Samba Simbora"</h2>
+          <p>
+            Autenticidade e ritmo contagiante com sambas clássicos e autorais.
+          </p>
+          <a href="reserva.html" class="btn-default">Fazer Reserva</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-root"></div>
 
     <script src="components/header/header.js"></script>
-    <script src="components/head/head.js"></script>
+    <script src="components/hero-subpages/hero-subpages.js"></script>
+    <script src="components/footer/footer.js"></script>
     <script>
-      createComponentHead("Calendário de Eventos");
+      CreateHeroSubpages(
+        "Calendário <span>de Eventos</span>",
+        "Fique por dentro da nossa programação e não perca nenhuma noite inesquecível no Bar-Baridade."
+      );
     </script>
   </body>
 </html>

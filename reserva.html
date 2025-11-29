@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bar-Baridade | Reserva</title>
     <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/reserva.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       rel="shortcut icon"
       href="assets/images/id/favicon-bar-baridade-96x96.png"
@@ -13,12 +18,97 @@
   </head>
   <body>
     <div id="header-root"></div>
-    <div id="menu -root"></div>
+    <div id="hero-subpage-root"></div>
+
+    <section id="reserva-section">
+      <div class="container flex form-wrapper">
+        <div class="img-form"></div>
+        <div class="form-content">
+          <h2>Reserve sua mesa</h2>
+          <p>
+            Porque algumas noites merecem ser planejadas (e brindadas com
+            estilo).
+          </p>
+          <form class="flex">
+            <div>
+              <label for="name">Nome completo</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Pra gente te chamar do jeito certo (e preparar seu lugar com carinho)"
+                class="inputs"
+              />
+              <span class="span-required">
+                O nome deve ter no mínimo 3 caracteres
+              </span>
+            </div>
+            <div>
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input
+                type="tel"
+                name="telefone"
+                id="telefone"
+                placeholder="Caso precise confirmar ou ajustar o horário do seu brinde"
+                class="inputs"
+              />
+              <span class="span-required">
+                O telefone deve ter no mínimo 8 caracteres
+              </span>
+            </div>
+            <div class="form-two-columns flex">
+              <div>
+                <label for="data">Data da reserva</label>
+                <input
+                  type="date"
+                  name="data"
+                  id="data"
+                  placeholder="Escolha o dia da sua noite Bar-Baridade"
+                  class="inputs"
+                />
+                <span class="span-required">
+                  A data da reserva deve ser válida
+                </span>
+              </div>
+              <div>
+                <label for="data">Número de pessoas</label>
+                <input
+                  type="number"
+                  name="numero"
+                  id="numero"
+                  placeholder="Mais gente, mais brindes"
+                  class="inputs"
+                />
+                <span class="span-required">
+                  O número de pessoas deve ser maior ou igual a 1
+                </span>
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="btn-default btn-submit">
+              Confirmar reserva
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div id="sobre-root"></div>
+    <div id="menu-root"></div>
+    <div id="footer-root"></div>
 
     <script src="components/header/header.js"></script>
-    <script src="components/head/head.js"></script>
+    <script src="components/hero-subpages/hero-subpages.js"></script>
+    <script src="components/sobre/sobre.js"></script>
+    <script src="components/menu/menu.js"></script>
+    <script src="components/footer/footer.js"></script>
+    <script src="assets/scripts/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      createComponentHead("Faça sua Reserva");
+      CreateHeroSubpages(
+        "Faça sua <span>reserva</span> agora",
+        "No Bar Baridade, cada mesa é um convite pra viver uma experiência única: drinks autorais, boa música e aquele clima que transforma qualquer quinta em sexta."
+      );
     </script>
   </body>
 </html>

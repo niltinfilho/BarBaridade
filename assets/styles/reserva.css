@@ -1,0 +1,67 @@
+#reserva-section {
+  background-color: var(--primary-color);
+  padding: 96px 0;
+
+  .form-wrapper {
+    background-color: var(--light-grey);
+    border-radius: 12px;
+
+    .img-form {
+      background: url("../images/img-about-1.jpg") center center no-repeat;
+      background-size: cover;
+      width: 640px;
+      height: 543px;
+      border-radius: 12px 0 0 12px;
+    }
+
+    .form-content {
+      padding: 32px;
+      width: 50%;
+
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      form {
+        margin-top: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        .form-two-columns {
+          gap: 40px;
+
+          div {
+            width: 50%;
+          }
+        }
+
+        div {
+          width: 100%;
+
+          label {
+            display: block;
+            margin-bottom: 8px;
+          }
+
+          input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            background-color: var(--medium-grey);
+          }
+
+          span {
+            display: none;
+            margin:6px 0 0 3px;
+            color: red;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
