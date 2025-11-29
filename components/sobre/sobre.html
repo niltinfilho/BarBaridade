@@ -60,6 +60,63 @@
       }
     }
   }
+
+  @media (max-width: 1280px) {
+    #about {
+      padding: 64px 16px;
+
+      .about-section {
+        flex-direction: column;
+        gap: 80px;
+
+        .about-texts {
+          width: 100%;
+
+          h2 {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 720px) {
+    #about {
+      padding: 64px 16px;
+
+      .about-section {
+        gap: 40px;
+
+        .about-texts {
+
+          h2 {
+            font-size: 24px;
+          }
+        }
+
+        .swiper-about-section {
+          .swiper-wrapper {
+            width: 300px;
+
+            .slider-about-1 {
+              width: 300px;
+              height: 169px;
+            }
+
+            .slider-about-2 {
+              width: 300px;
+              height: 169px;
+            }
+
+            .slider-about-3 {
+              width: 300px;
+              height: 169px;
+            }
+          }
+        }
+      }
+    }
+  }
 </style>
 
 <section id="about">

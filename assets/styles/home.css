@@ -169,3 +169,93 @@
     }
   }
 }
+
+@media (max-width: 1280px) {
+  #hero-section {
+
+    .slider-text {
+      top: 35%;
+      padding: 0 16px;
+
+      h1 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  #calendario-section {
+    flex-direction: column;
+
+    .img-calendario {
+      width: 100%;
+      height: 40vh;
+    }
+
+    .text-calendario {
+      width: 100%;
+      padding: 64px 16px;
+
+      h2 {
+        font-size: 36px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  #hero-section {
+
+    .slider-text {
+      top: 35%;
+      gap: 32px;
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #calendario-section {
+
+    .text-calendario {
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      .bandas-calendario {
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          .calendario-banda-title {
+            font-weight: 600;
+            font-size: 16px;
+          }
+
+          .calendario-banda-desc {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

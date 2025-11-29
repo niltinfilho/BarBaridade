@@ -32,3 +32,29 @@
   flex-direction: row-reverse;
   background-color: var(--light-grey);
 }
+
+@media (max-width: 1280px) {
+  .show-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 64px 16px;
+
+    .show-text {
+      max-width: 100%;
+    }
+  }
+
+  .show-section:nth-child(even) {
+    flex-direction: column;
+    gap: 40px;
+    padding: 64px 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .show-section {
+    img {
+      max-width: 320px;
+    }
+  }
+}

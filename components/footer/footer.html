@@ -4,9 +4,9 @@
 
     .cta-footer {
       padding: 96px 0;
-      background: url("assets/images/banner-bar-baridade-footer.jpg") center center
-      no-repeat;
-    background-size: cover;
+      background: url("assets/images/banner-bar-baridade-footer.jpg") center
+        center no-repeat;
+      background-size: cover;
       text-align: center;
 
       h2 {
@@ -74,6 +74,71 @@
 
         a:hover {
           color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    footer {
+      .cta-footer {
+        padding: 64px 16px;
+
+        h2 {
+          font-size: 36px;
+        }
+      }
+
+      .info-footer {
+        padding: 64px 16px 40px;
+
+        .info-footer-top {
+          justify-content: space-between;
+          align-items: flex-start;
+
+          img {
+            width: 200px;
+          }
+
+          h2 {
+            font-size: 18px;
+          }
+        }
+
+        .info-footer-bottom {
+          margin-top: 64px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 720px) {
+    footer {
+
+      .cta-footer {
+
+        h2 {
+          font-size: 24px;
+        }
+
+        a {
+          margin: 24px auto 0;
+        }
+      }
+
+      .info-footer {
+        .info-footer-top {
+          gap: 40px;
+
+          img {
+            width: 180px;
+          }
+        }
+
+        .info-footer-bottom {
+          align-items: center;
+          text-align: center;
+          margin-top:40px;
         }
       }
     }

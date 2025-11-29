@@ -7,15 +7,15 @@
     width: 100%;
     z-index: 2;
 
-     div {
+    div {
       justify-content: space-between;
 
-       img {
+      img {
         width: 240px;
       }
 
-       ul {
-         a {
+      ul {
+        a {
           font-family: "Roboto", sans-serif;
           font-weight: 600;
           font-size: 16px;
@@ -34,6 +34,99 @@
           margin-left: 24px;
         }
       }
+
+      .btn-menu-hamburger {
+        display: none;
+
+        span {
+          display: block;
+          width: 20px;
+          height: 2px;
+          background-color: var(--white);
+          margin: 4px 0;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    header {
+      padding: 12px 16px;
+
+      div {
+        flex-direction: row;
+
+        img {
+          width: 140px;
+        }
+
+        nav {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 77px;
+          width: 100%;
+          padding: 40px;
+          background-color: var(--secondary-color);
+
+          ul {
+            flex-direction: column !important;
+            gap: 24px;
+
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+
+        nav.open {
+          display: block;
+        }
+
+        .btn-menu-hamburger {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 720px) {
+    header {
+      div {
+        flex-direction: row !important;
+
+        img {
+          width: 120px;
+        }
+
+        nav {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 70px;
+          width: 100%;
+          padding: 40px;
+          background-color: var(--secondary-color);
+
+          ul {
+            flex-direction: column !important;
+            gap: 24px;
+
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+
+        nav.open {
+          display: block;
+        }
+
+        .btn-menu-hamburger {
+          display: block;
+        }
+      }
     }
   }
 </style>
@@ -45,7 +138,7 @@
         src="assets/images/id/logo-bar-baridade-horizontal-original.svg"
         alt="Logo Bar-Baridade"
     /></a>
-    <nav>
+    <nav class="nav">
       <ul class="flex">
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre o Bar</a></li>
@@ -58,5 +151,10 @@
         </li>
       </ul>
     </nav>
+    <div class="btn-menu-hamburger" onclick="openMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </header>

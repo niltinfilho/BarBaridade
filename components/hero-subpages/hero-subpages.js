@@ -27,6 +27,34 @@ function CreateHeroSubpages(textTitle, textDescription) {
 
       p {
         font-size: 18px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      #hero-subpages {
+        padding: calc(120px + 10vh) 16px;
+
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    @media (max-width: 720px) {
+      #hero-subpages {
+        padding: calc(120px + 5vh) 16px;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 14px;
+        }
       }
     }
   </style>
